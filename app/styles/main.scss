@@ -1,0 +1,302 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+.container{
+    padding: 0;
+}
+
+/* Space out content a bit */
+body {
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {    
+    h1{
+        margin:0;
+        img{
+          width:100%;
+        }
+    }
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    background: #2a303e;
+    border-top: solid 3px #1bafeb;
+    color: #ccc;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.footer ul{
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li a{
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: solid .2em #ccc;
+    cursor:pointer;
+    color: #ccc;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+.slider-main{
+    ul{
+        margin:0;
+        padding:0;
+        list-style: none;
+        li.slide{
+            margin:0;
+            padding:0;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .image-small{
+                
+            }
+            .image-normal{
+                display: none;
+            }
+            .caption{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 1em;
+            }
+            &.slide-1{
+                .caption{
+                    top: 2em;    
+                }                            
+                color: #fff;
+                h3{                 
+                    font-size: 1.5em;
+                }
+                a{
+                    color: #fff;
+                    background: rgba(0,0,0,.6);
+                    display: inline-block;
+                    .link-text{
+                                         
+                        padding: 0.5em 0.5em 0.5em 0.5em;                        
+                        font-size: .8em;
+                        text-decoration: none;
+                        display: inline-block;
+                    }
+                    .link-next{
+                        background: #1bafeb;                      
+                        padding: 0.5em .8em;
+                        display: inline-block;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+#servicios{
+    padding: 1em;
+    ul{
+        margin:0;
+        padding: 0;
+        list-style: none;
+        li{
+            margin:0;
+            padding: 0;
+            .icon-servicio{
+                border-radius:9em;
+                background: #1bafeb;
+                width: 9em;
+                height: 9em;
+                margin: 0 auto;
+            }     
+            h3{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.nav{
+    > li{
+        > a{
+            color: #2a303e;            
+            padding: .5em 0;
+            &:hover{
+                color:#1bafeb;
+                background: none;
+                border-bottom: solid .2em #1bafeb;
+            }
+        }
+        &.active{
+            a{
+                color:#1bafeb;
+                background: none;
+                border-bottom: solid .2em #1bafeb;
+            }
+        }
+    }
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+   
+
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header,#servicios, .footer .container{
+        margin: 0  auto;
+        width: 768px;
+    }
+    .header {
+        
+        height: 6em;
+        margin: 0 auto;
+        h1{
+            width: 250px;
+            float: left;
+        }
+        .nav{
+            width: 600px;
+            float: right;
+            > li {
+                display: inline-block;                
+                > a{
+                    font-weight: bold;
+                    padding-top: 2em;
+                    padding-bottom: 2.5em;
+                    margin: 0 1em;
+                }
+            }
+
+
+        }
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+    
+    .slider-main{
+        ul{           
+            li.slide{               
+                .image-small{
+                    display: none;
+                }
+                .image-normal{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* Space out the masthead */
+    
+    .header, #servicios, .footer>.container{
+        width: 960px;
+
+    }
+    #servicios{
+        
+        ul{
+            
+            li{
+                display: inline-block;
+                width: 24.5%;
+                h3{
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    .footer{  
+        padding-top: 3em;
+        padding-bottom: 3em;
+        p{
+            float: left;
+            display: inline-block;
+        }
+        ul{
+            float: right;
+            width: 470px;
+            text-align: right;
+            li{
+                display: inline-block;
+                margin: 0 .3em;
+                a{
+                    border-bottom:none;
+                    border-right: solid .2em #ccc;
+                    padding-right: .5em;
+
+                }
+                &:nth-last-child(1) a{
+                    border-right: none;
+                }
+            }
+        }
+    }
+    
+
+}
+
+
