@@ -53,7 +53,9 @@ body {
     font-size: 16px;
     padding-top: 20px;
 }
-
+figure{
+    margin:0;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -128,6 +130,7 @@ body {
     margin-top: 28px;
 }
 .slider-main{
+    height: 410px;
     ul{
         margin:0;
         padding:0;
@@ -214,22 +217,26 @@ body {
     }
 }
 
-.nav{
-    > li{
-        > a{
-            color: #2a303e;            
-            padding: .5em 0;
-            &:hover{
-                color:#1bafeb;
-                background: none;
-                border-bottom: solid .2em #1bafeb;
+nav{
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            > a{
+                color: #2a303e;            
+                padding: .5em 2em;
+                &:hover{
+                    color:#1bafeb;
+                    background: none;
+                    border-bottom: solid .2em #1bafeb;
+                }
             }
-        }
-        &.active{
-            a{
-                color:#1bafeb;
-                background: none;
-                border-bottom: solid .2em #1bafeb;
+            &.active{
+                a{
+                    color:#1bafeb;
+                    background: none;
+                    border-bottom: solid .2em #1bafeb;
+                }
             }
         }
     }
