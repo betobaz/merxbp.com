@@ -1,7 +1,5 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
-@import 'sass-bootstrap/lib/bootstrap';
-
 @font-face {
     font-family: 'merxbp.com';
     src:url('fonts/merxbp.com.eot');
@@ -39,9 +37,6 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 .icon-globe:before {
     content: "\e603";
 }
-.icon-menu:before {
-    content: "\e604";
-}
 
 .browsehappy {
     margin: 0.2em 0;
@@ -69,8 +64,11 @@ body {
 
 /* Custom page header */
 .header {    
-    img{
-      width:160px;
+    h1{
+        margin:0;
+        img{
+          width:100%;
+        }
     }
 }
 
@@ -101,7 +99,7 @@ body {
 .footer ul li a{
     display: inline-block;
     text-decoration: none;
-    border-bottom: solid .1em #ccc;
+    border-bottom: solid .2em #ccc;
     cursor:pointer;
     color: #ccc;
 }
@@ -216,63 +214,23 @@ body {
     }
 }
 
-nav{
-    position: relative;
-    min-height: 50px;
-    margin: .6em 0;
-    
-    
-    span.icon-menu{
-        color: #1bafeb;
-        left: .2em;
-        top:.3em;
-        font-size: 2em;
-        position: absolute;
-        
-    }
-    ul{
-        border: .05em solid #1bafeb;
-        box-shadow: 0em .4em .5em rgba(0,0,0,.4);
-        border-radius: .5em;
-        font-size: 1.5em;
-        margin:0;
-        padding: .1em 0 .1em 0;
-        position: absolute;
-        list-style: none; 
-        top: .3em;
-        width: 70%;
-        z-index: 1;
-        > li{
-            padding-left: 2em;
-            display: none;
-            &.current{
-                display:inline-block;
-            }
-            > a{        
-                
-                text-decoration: none;
-                
-                &:hover{
-                    color:#1bafeb;
-                    background: none;
-                    text-decoration: none;
-                }
-          }
-          &.active{
-              a{
+.nav{
+    > li{
+        > a{
+            color: #2a303e;            
+            padding: .5em 0;
+            &:hover{
                 color:#1bafeb;
-                background: none;                
-                text-decoration: none;
-
-              }
-          }
+                background: none;
+                border-bottom: solid .2em #1bafeb;
+            }
         }
-        &:hover{
-          background: #fff;
-          border: .05em solid #1bafeb;
-          li{
-              display:block;
-          }
+        &.active{
+            a{
+                color:#1bafeb;
+                background: none;
+                border-bottom: solid .2em #1bafeb;
+            }
         }
     }
 }
