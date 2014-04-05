@@ -140,7 +140,7 @@ figure{
     color: #ccc;
     padding-top: 1em;
     padding-bottom: 1em;
-    margin-top: 2em;
+  //  margin-top: 2em;
     p,
     a{
         font-size: .8em;    
@@ -331,6 +331,25 @@ nav{
         }
     }
 }
+
+#webtolead {
+padding: 20px 0;
+background: #f4f4f4;
+padding: 10px 0 10px 0;
+padding-top: 2em; 
+}
+
+#main-bar {
+    
+    background: #f4f4f4; 
+    box-shadow: 0 -0.1em 1em rgba(0, 0, 0, 0.6);
+    padding: 2em;
+}
+
+#webtolead a {
+color: white;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
    
