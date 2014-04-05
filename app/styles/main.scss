@@ -233,7 +233,21 @@ figure{
             &.slide-1{
                 .caption{
                     top: 2em;    
-                }                            
+                }
+                .slide-1-sugar-logo
+                {
+                    position: absolute;
+                    width: 26%;
+                    top: 6em;
+                    right: -20em;
+                }
+                .slide-1-smartsheet-logo
+                {
+                    position: absolute;
+                    width: 24%;
+                    top: 1em;
+                    right: -12em;
+                }                  
                 color: #fff;
                 h3{                 
                     font-size: 1.5em;
