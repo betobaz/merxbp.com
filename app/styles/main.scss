@@ -140,6 +140,25 @@ figure{
     color: #ccc;
     padding-top: 1em;
     padding-bottom: 1em;
+    
+    p,
+    a{
+        font-size: .8em;    
+    }
+    li{
+        display: inline-block;
+        margin: 0 .3em;
+        a{
+            border-bottom:none;
+            border-right: solid .2em #ccc;
+            padding-right: .5em;
+
+        }
+        &:nth-last-child(1) a{
+            border-right: none;
+        }
+    }
+    
 }
 
 .footer ul{
@@ -152,7 +171,6 @@ figure{
 .footer ul li a{
     display: inline-block;
     text-decoration: none;
-    border-bottom: solid .2em #ccc;
     cursor:pointer;
     color: #ccc;
 }
@@ -423,19 +441,7 @@ nav{
             float: right;
             width: 470px;
             text-align: right;
-            li{
-                display: inline-block;
-                margin: 0 .3em;
-                a{
-                    border-bottom:none;
-                    border-right: solid .2em #ccc;
-                    padding-right: .5em;
-
-                }
-                &:nth-last-child(1) a{
-                    border-right: none;
-                }
-            }
+            
         }
     }
     
