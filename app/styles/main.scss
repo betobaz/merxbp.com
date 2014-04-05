@@ -140,7 +140,7 @@ figure{
     color: #ccc;
     padding-top: 1em;
     padding-bottom: 1em;
-    
+    margin-top: 2em;
     p,
     a{
         font-size: .8em;    
@@ -150,8 +150,12 @@ figure{
         margin: 0 .3em;
         a{
             border-bottom:none;
-            border-right: solid .2em #ccc;
+            border-right: solid .1em #ccc;
             padding-right: .5em;
+            display: inline-block;
+            text-decoration: none;
+            cursor:pointer;
+            color: #ccc;
 
         }
         &:nth-last-child(1) a{
@@ -169,10 +173,7 @@ figure{
 }
 
 .footer ul li a{
-    display: inline-block;
-    text-decoration: none;
-    cursor:pointer;
-    color: #ccc;
+    
 }
 
 .container-narrow > hr {
@@ -246,6 +247,7 @@ figure{
                     font-size: .75em;
                     letter-spacing: .2em;
                     position: relative;
+                    width: 10em;
                     &:before{
                         font-family: 'merxbpcom';
                         content: "\e60d";
